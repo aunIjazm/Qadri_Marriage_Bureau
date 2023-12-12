@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Lumanosimo&family=Pacifico&family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color1: burlywood;
+  --color2: #ace1af;
+  --color3: rgb(81, 59, 4);
+  --btncolor1: #004225;
+  --btncolor2: #e7feff;
+}
+
+body {
+  background-color: var(--color1);
+}
+.colornav {
+  background-color: var(--color3);
+  color: var(--color1);
+}
+
+/* For hover button OR Link Start */
+.colornav a {
+  color: var(--color1);
+  margin-right: 20px;
+  border-left: 1px dotted var(--color1);
+  border-right: 1px dotted var(--color1);
+}
+.colornav a:hover {
+  color: var(--color1);
+  border-bottom: 2px solid var(--color2);
+  background-image: linear-gradient(
+    var(--color2),
+    var(--color3),
+    var(--color3),
+    var(--color3),
+    var(--color3)
+  );
+}
+.open {
+  border-bottom: 2px solid var(--color2);
+  background-image: linear-gradient(
+    var(--color2),
+    var(--color3),
+    var(--color3),
+    var(--color3),
+    var(--color3)
+  );
+  font-weight: bold;
+}
+/* For hover button OR Link End */
+.main {
+  font-family: "Lumanosimo", cursive;
+  color: var(--color2);
+  margin-top: -100px;
+  animation-name: nameweb;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes nameweb {
+  100% {
+    margin-top: 0px;
+  }
+}
+
+.main1 {
+  color: var(--color3);
+}
+.main1 h1 {
+  font-weight: bold;
+}
+
+.footer {
+  background-color: var(--color3);
+  color: var(--color1);
+}
+.footHead {
+  background-image: linear-gradient(
+    var(--color3),
+    var(--color2),
+    var(--color2),
+    var(--color2)
+  );
+  color: var(--color3);
+}
+.urdu {
+  font-family: "Jameel Noori Nastaleeq", serif;
+}
+.btun {
+  text-decoration: none;
+  color: var(--btncolor2);
+  margin-right: 20px;
+  background-color: var(--btncolor1);
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid var(--color1);
+  transition: all 0.3s;
+}
+.btun:hover {
+  color: var(--btncolor1);
+  border: 3px solid var(--btncolor1);
+  background-color: var(--btncolor2);
+}
+
+.cont{
+    background-color: var(--color2);
+    padding: 30px;
+}
+
+.sectpics{
+  background-color: var(--btncolor1);
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 20px;
+}
+.sectcard{
+  background-color: var(--color3);
+}
+.sectcardtxt{
+  color: var(--color1);
+}
